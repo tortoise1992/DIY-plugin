@@ -1,0 +1,71 @@
+.ahui-modal-bg{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    z-index: 9999;
+	background-color: rgba(0,0,0,.3);
+    color: #757575;
+    font-family: '微软雅黑';
+    display: none;
+}
+.ahui-modal{
+    position: absolute;
+    left: 50%;
+    top:50%;
+}
+.ahui-modal .modal-deco{
+    position: relative;
+    height: 88px;
+    background-color: #63c3d0;
+    border-radius: 8px 8px 0 0;
+}
+.ahui-modal .modal-deco .modal-flower{
+    width: 64px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    bottom: 44px;
+    margin-left: -32px;
+    background: url("popup-flower.png") no-repeat center center;
+}
+.ahui-modal .modal-deco .modal-logo{
+    width: 74px;
+    height: 38px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -37px;
+    background: url("popup-half.png") no-repeat center center;
+    color: #63c3d0;
+}
+.ahui-modal .modal-text{
+    padding: 20px 30px;
+    background-color: #fff;
+
+}
+.ahui-modal .modal-btn{
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    height: 60px;
+    text-align: center;
+}
+.ahui-modal .modal-btn span{
+    display: inline-block;
+    width: 176px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #63c3d0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.ahui-modal .modal-text .inner{
+    width: 100%;
+    text-align: center;
+}

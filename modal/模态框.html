@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="modal.css"/>
+	</head>
+	<body>
+        <button class="demo">点我打开弹窗</button>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="AhuiModal.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            $(function () {
+                $('.demo').click(function () {
+                    AhuiModal({
+                        width:500,   //默认为490px
+//                        type:'comfirm',//弹窗类型，可选alert,comfirm，默认为alert
+                        text:'您确定要点击吗？', //弹窗提示的文本，默认为空
+                        allowClose:true,    //设置是否允许点击弹窗之外的部分关闭弹窗，默认为false
+                        callback:function () {
+                            alert('你点击了确定按钮！');
+                        }
+                    });
+                });
+
+            })
+        </script>
+	</body>
+</html>
