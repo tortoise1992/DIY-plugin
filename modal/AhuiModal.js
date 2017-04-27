@@ -15,6 +15,7 @@ function Modal(options){
     };
     this.tempObj={};
     this.options=$.extend({},this.defaults,options);
+    this.init();
 }
 
 Modal.prototype={
@@ -82,8 +83,7 @@ Modal.prototype={
 };
 
 function AhuiModal(opt) {
-    var modal=new Modal(opt);
-    modal.init();
+    var modal=new Modal(opt);   
 }
 
 
