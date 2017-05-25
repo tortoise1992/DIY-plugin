@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <style>
+            .content-wrapper .item{
+                height: 50px;
+                border-bottom: 1px solid #ccc;
+            }
+
+        </style>
+	</head>
+	<body>
+		
+    <div class="content-wrapper">
+
+    </div>
+	</body>
+	<script src="lib/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>	
+    <script src="lib/template-web.js"></script>
+    <script type="text/html" id="test">
+    	{{each list item index}}
+    		<div class="item">{{item}}</div>	
+    	{{/each}}
+    </script>
+    <script src="js/loadMore.js"></script>
+    <script>
+        $(function () {
+            new loadUtil({
+                url:'./test', //请求数据的主路径
+                template:'test',  //传模板id
+                parents:'.content-wrapper' //父容器
+            })
+        })
+
+    </script>
+</html>
